@@ -1,6 +1,6 @@
 from helper import validate_and_execute
 
-user_input = " "
+user_input = ""
 while user_input != "exit":
     user_input = input("enter a number and and conversion unit:\n")
     days_and_units = user_input.split(":")

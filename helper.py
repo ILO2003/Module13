@@ -20,4 +20,4 @@ def validate_and_execute(days_and_units_dictionary):
         else:
             print("you have entered a negative number")
     except ValueError:
-        print("your input is not a valid number, please provide positive number")
+        print("your input is not a valid number, please provide positive number:")
