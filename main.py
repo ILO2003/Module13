@@ -1,9 +1,11 @@
-from helper import validate_and_execute
+from user import User
+from post import Post
 
-user_input = ""
-while user_input != "exit":
-    user_input = input("enter a number and and conversion unit:\n")
-    days_and_units = user_input.split(":")
-    days_and_units_dictionary = {"days": days_and_units[0], "unit": days_and_units[1]}
-    print(days_and_units_dictionary)
-    validate_and_execute(days_and_units_dictionary)
+app_user_one = User("example@gmail.com", "ilia testing", "my_pwd", "DevOps")
+app_user_one.get_user_info()
+
+app_user_one.change_job_title("devops trainer")
+app_user_one.get_user_info()
+
+new_post = Post ("on a secret mission today", app_user_one.name)
+new_post.get_post_info()
